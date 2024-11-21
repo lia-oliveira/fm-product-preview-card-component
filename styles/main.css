@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+:root{
+    /*Colors*/
+    --co-Dark-cyan: hsl(158, 36%, 37%);
+    --co-Cream: hsl(30, 38%, 92%);
+    --co-Very-dark-blue: hsl(212, 21%, 14%);
+    --co-Dark-grayish-blue: hsl(228, 12%, 48%);
+    --co-White: hsl(0, 0%, 100%);
+    --co-Blue: hsl(228, 45%, 44%);
+    /*Fonts*/
+    --ff-montserrat: "Montserrat", serif;
+    --ff-fraunces: "Fraunces", serif;
+    --fs-11: 1.1rem;
+    --fs-12: 1.2rem;
+    --fs-14: 1.4rem;
+    --fs-32: 3.2rem;
+    --fw-500: 500;
+    --fw-700: 700;
+    --lh-23: 2.3rem;
+    --lh-17: 1.7rem;
+    --font-style: normal;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-14);
+    color: var(--co-Very-dark-blue);
+    font-style: normal;
+}
+
+h1{
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-32);
+    color: var(--co-Very-dark-blue);
+    font-weight: var(--fw-700);
+}
+
+
+
+
+
+
+
+
+
+/*.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }*/
