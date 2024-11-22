@@ -20,7 +20,7 @@
     --fw-700: 700;
     --lh-23: 2.3rem;
     --lh-17: 1.7rem;
-    --font-style: normal;
+    --f-style-normal: normal;
 }
 
 *, html, body {
@@ -34,10 +34,16 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-family: var(--ff-montserrat);
     font-size: var(--fs-14);
     color: var(--co-Very-dark-blue);
-    font-style: normal;
+    font-style: var(--f-style-normal);
+    background-color: var(--co-Cream);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+
 }
 
 h1{
@@ -45,15 +51,108 @@ h1{
     font-size: var(--fs-32);
     color: var(--co-Very-dark-blue);
     font-weight: var(--fw-700);
+    line-height: 0.9;
+}
+
+main {
+    /*margin: 2.8rem 1.6rem 0.8rem 1.6rem;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: var(--co-White);
+    border-radius: 1rem;
+}
+
+main img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main .content-padding {
+    padding: 2.8rem 1.6rem;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content > .category {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-12);
+    font-weight: var(--fw-700);
+    color:var(--co-Very-dark-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.58rem;
+    margin-bottom: 1.7rem;
+}
+
+.content > .description{
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-14);
+    line-height: var(--lh-23);
+    padding-right: 0.9rem;
+    margin: 1.8rem 0 3rem 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.price strong{
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-32);
+    font-weight: var(--fw-700);
+    color: var(--co-Dark-cyan);
+}
+
+.price .full-price{
+    text-decoration: line-through;
+}
+
+button{
+    color: var(--co-White);
+    background-color: var(--co-Dark-cyan);
+    border: none;
+    padding: 1.7rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+main button img{
+    color: var(--co-White);
+    margin-right: 1rem;
+}
+
+footer {
+    margin: 0 auto;
+    width: 100vw;
+}
+
+footer p{
+    font-size: var(--fs-11);
+    text-align: center;
 }
 
 
+@media (min-width: 500px){
+    main {
+        max-width: 60.3rem;
+        grid-template-columns: 1fr 1fr;
+    }
 
 
 
+}
 
 
+/*
 
 
+*/
 /*.attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }*/
