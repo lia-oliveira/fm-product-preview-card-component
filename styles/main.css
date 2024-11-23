@@ -3,7 +3,7 @@
 
 :root{
     /*Colors*/
-    --co-Dark-green:hsl(156, 42, 18);
+    --co-Dark-green:hsl(155, 39%, 19%);
     --co-Dark-cyan: hsl(158, 36%, 37%);
     --co-Cream: hsl(30, 38%, 92%);
     --co-Very-dark-blue: hsl(212, 21%, 14%);
@@ -139,7 +139,7 @@ main{
 
 .main-content-btn:hover,
 .main-content-btn:focus {
-  background-color: var(--co-Green-dark);
+  background-color: var(--co-Dark-green);
   outline: none;
 }
 
