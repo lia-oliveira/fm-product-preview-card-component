@@ -39,7 +39,7 @@ Result achieved:
 ### Links
 
 - Solution URL: [Product preview card component Repo](https://github.com/lia-oliveira/fm-product-preview-card-component)
-- Live Site URL: [Product preview card component Live](https://your-live-site-url.com)
+- Live Site URL: [Product preview card component Live](https://fm-product-preview-card-component-theta.vercel.app/)
 
 ## My process
 
