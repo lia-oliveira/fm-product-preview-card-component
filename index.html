@@ -16,24 +16,30 @@
 </head>
 <body>
   <main>
-    <img src="./images/image-product-mobile.jpg" alt="Gabrielle Parfum">
-    <div class="content content-padding">
-      <p class="category">Perfume</p>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-      <div class="price">
-        <p><strong>$149.99</strong></p>
-        <p class="full-price">$169.99</p>
+    <picture class="main-picture">
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 500px)">
+      <source srcset="./images/image-product-mobile.jpg" media="(max-width: 500px)">
+      <img src="./images/image-product-mobile.jpg" class="main-picture__product" alt="Vidro de Perfume Gabrielle">
+    </picture>
+    <section class="main-content">
+      <p class="main-content__category">Perfume</p>
+      <h1 class="main-content__title">Gabrielle Essence Eau De Parfum</h1>
+      <p class="main-content__description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
+        for the House of CHANEL.</p>
+      <div class="main-content-price">
+        <p class="main-content-price__discount">$149.99</p>
+        <p class="main-content-price__full">$169.99</p>
       </div>
-      <button>
-        <img src="./images/icon-cart.svg" alt="icon cart">
-        Add to Cart
+      <button class="main-content-btn">
+        <img src="./images/icon-cart.svg" class="main-content-btn__icon" alt="Icon cart">
+        <span class="main-content-btn__text">Add to Cart</span>
       </button>
-    </div>
+    </section> <!--Content-->
   </main>
-  <footer>
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/lia-oliveira">Gillian Oliveira</a>.</p>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/lia-oliveira">Gillian Oliveira</a>.
   </footer>
 </body>
 </html>
